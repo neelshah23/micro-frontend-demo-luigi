@@ -1,0 +1,14 @@
+luigi/
+.idea/
+
+iro-micro-frontend/node_modules/
+micro-frontend-demo/node_modules/
+micro-frontend-demo2/node_modules/
+
+iro-micro-frontend/dist/
+micro-frontend-demo/dist/
+micro-frontend-demo2/dist/
+
+iro-micro-frontend/.idea/
+micro-frontend-demo/.idea/
+micro-frontend-demo2/.idea/

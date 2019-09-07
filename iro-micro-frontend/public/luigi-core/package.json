@@ -1,0 +1,41 @@
+{
+  "_from": "@kyma-project/luigi-core",
+  "_id": "@kyma-project/luigi-core@0.6.2",
+  "_inBundle": false,
+  "_integrity": "sha512-1v+Yoq8sVlddWqY8q0GGZmTsZVcqIn5TVuf40j9gF6rcwc89AOiQBWA7yJyYfVIeK3cNNb/U88dA54HEOdeZjg==",
+  "_location": "/@kyma-project/luigi-core",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@kyma-project/luigi-core",
+    "name": "@kyma-project/luigi-core",
+    "escapedName": "@kyma-project%2fluigi-core",
+    "scope": "@kyma-project",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@kyma-project/luigi-core/-/luigi-core-0.6.2.tgz",
+  "_shasum": "bf1740b1ab79b2b8683537ad7045fe7223cede5e",
+  "_spec": "@kyma-project/luigi-core",
+  "_where": "/Library/WebServer/Documents/Neel/micro-frontnend/iro-miro-frontned",
+  "bugs": {
+    "url": "https://github.com/SAP/luigi/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "luigi-core",
+  "homepage": "https://github.com/SAP/luigi#readme",
+  "license": "Apache-2.0",
+  "name": "@kyma-project/luigi-core",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SAP/luigi.git"
+  },
+  "version": "0.6.2"
+}

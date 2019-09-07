@@ -1,0 +1,50 @@
+{
+  "_from": "@kyma-project/luigi-client",
+  "_id": "@kyma-project/luigi-client@0.6.2",
+  "_inBundle": false,
+  "_integrity": "sha512-Sq4xZM9uISoN/WxVMqRIHYJEXvNmo/hhhKe7thgjp4aLG6ikzOBQkhAQVk91F0Cvl4Bl28OjPlOE+kHIhjwsmQ==",
+  "_location": "/@kyma-project/luigi-client",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@kyma-project/luigi-client",
+    "name": "@kyma-project/luigi-client",
+    "escapedName": "@kyma-project%2fluigi-client",
+    "scope": "@kyma-project",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@kyma-project/luigi-client/-/luigi-client-0.6.2.tgz",
+  "_shasum": "b3776f156f688ee4486ac948b3c6f0a41117e8f6",
+  "_spec": "@kyma-project/luigi-client",
+  "_where": "/Library/WebServer/Documents/Neel/micro-frontnend/iro-miro-frontned",
+  "bugs": {
+    "url": "https://github.com/SAP/luigi/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Javascript library supporting consumers of the Luigi framework",
+  "homepage": "https://github.com/SAP/luigi#readme",
+  "keywords": [
+    "luigi",
+    "UI",
+    "extensibility"
+  ],
+  "license": "Apache-2.0",
+  "main": "luigi-client.js",
+  "name": "@kyma-project/luigi-client",
+  "publishConfig": {
+    "tag": "luigi-client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SAP/luigi.git"
+  },
+  "version": "0.6.2"
+}

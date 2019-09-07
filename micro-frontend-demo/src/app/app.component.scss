@@ -1,0 +1,27 @@
+
+.card{
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  line-height: 200px;
+  display: inline-block;
+  box-shadow: 1px 1px 1px 1px #efefef;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3ms all ease;
+  font-size: 30px;
+  color: #666666;
+
+  &:hover{
+     background-color: #f9f9f9;
+    color: #333333;
+
+  }
+}
+.card p{
+  margin: 0;
+
+}
+.center{
+  text-align: center;
+}
