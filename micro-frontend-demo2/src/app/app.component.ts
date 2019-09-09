@@ -12,19 +12,12 @@ export class AppComponent implements OnInit {
   cudListener: any;
 
   ngOnInit(): void {
-    console.log(luigiClient.getNodeParams());
     this.cudListener = addContextUpdateListener(updatedContext => {
       console.log(updatedContext);
-      // this.projectId = updatedContext.currentProject;
-      // this.preservedViewCallbackContext = updatedContext.goBackContext;
-      // this.currentLocale = uxManager().getCurrentLocale();
-      // this.canChangeLocale = getClientPermissions().changeCurrentLocale;
-      // console.log('context updated', this.currentLocale, updatedContext);
-      // // Be sure to check for destroyed ChangeDetectorRef,
-      // // else you get runtime Errors
-      // if (!this.cdr['destroyed']) {
-      //   this.cdr.detectChanges();
-      // }
     });
+  }
+
+  goToReactApp() {
+    luigiClient.linkManager().navigate('/home/three', null, false);
   }
 }

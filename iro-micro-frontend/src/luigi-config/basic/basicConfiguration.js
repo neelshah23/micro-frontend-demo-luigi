@@ -13,15 +13,20 @@ Luigi.setConfig({
                     },
                     {
                         pathSegment: 'one',
-                        label: 'Section one',
+                        label: 'Micro frontend',
                         viewUrl: 'http://localhost:4000/'
                     },
                     {
                         pathSegment: 'two',
-                        label: 'Section two',
-                        viewUrl: 'http://localhost:4100/',
-                        context: {
-                            currentProject: id
+                        label: 'Micro frontend two',
+                        viewUrl: 'http://localhost:4100/'
+                    },
+                    {
+                        pathSegment: 'three',
+                        label: 'Micro frontend React',
+                        viewUrl: 'http://localhost:3000/',
+                        loadingIndicator: {
+                            enabled: false
                         },
                     }
                 ]
