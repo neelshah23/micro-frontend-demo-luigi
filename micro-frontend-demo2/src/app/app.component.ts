@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import * as luigiClient from '@kyma-project/luigi-client';
 import {addContextUpdateListener, getClientPermissions, uxManager} from '@kyma-project/luigi-client/luigi-client';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
