@@ -33,25 +33,28 @@ query getChallengeListByStatus($status_id: String!) {
   ) {
     key
     list {
-      id
+     
       title
       location
-      c_status
-     relationshipRecommendation
+     c_status
      createdAt
      createdByName
-     updatedAt
-     updatedByName
    }
  }}
 `,
                 variables: {
-                    status_id: 'published'
+                    status_id: 'in_draft'
                 }
             }
         }).then((result) => {
-            // this.updateData(result.data.data.challengeUserReport.list);
+            if(result.data.data && result.data.data.challengeListByStatus.list) {
+                this.updateData(result.data.data.challengeListByStatus.list);
+            }
         });
+    }
+
+    storeDetails(data){
+        localStorage.setItem('data',data);
     }
     updateData(data) {
         const new_data = {
@@ -70,7 +73,7 @@ query getChallengeListByStatus($status_id: String!) {
     };
     render() {
         return (
-            <div className={'contentPadding'}>
+            <div style={{padding: "10px"}} className={'contentPadding'}>
                 <Box display="flex" flexDirection="column">
                     <Box display="flex" flexDirection="row" style={{alignItems: "baseline", placeContent: "space-between"}}>
                     </Box>

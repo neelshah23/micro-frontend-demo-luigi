@@ -95,7 +95,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/myangularElement.js"
+            ]
           }
         },
         "lint": {
