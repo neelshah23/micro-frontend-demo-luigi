@@ -56,6 +56,9 @@ query getChallengeListByStatus($status_id: String!) {
     storeDetails(data){
         localStorage.setItem('data',data);
     }
+    goToDetails(data){
+        this.props.history.push('/details')
+    }
     updateData(data) {
         const new_data = {
             columns: [],
@@ -77,7 +80,7 @@ query getChallengeListByStatus($status_id: String!) {
                 <Box display="flex" flexDirection="column">
                     <Box display="flex" flexDirection="row" style={{alignItems: "baseline", placeContent: "space-between"}}>
                     </Box>
-                    <EnhancedTable title="Dashboard" data={this.state.challenge_data} />
+                    <EnhancedTable title="Dashboard" data={this.state.challenge_data} gotoDetails={()=> this.goToDetails()}/>
                 </Box>
             </div>
         );

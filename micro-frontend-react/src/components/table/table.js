@@ -15,7 +15,7 @@ export default function EnhancedTable(props) {
                     tooltip: 'View details',
                     onClick: (event, rowData) => {
                         localStorage.setItem('data',JSON.stringify(rowData));
-                        props.history.push('/');
+                        props.gotoDetails();
                     }
                 }
             ]}
