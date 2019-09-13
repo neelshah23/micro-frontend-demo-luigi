@@ -8,18 +8,18 @@ Luigi.setConfig({
                 children: [
                     {
                         pathSegment: 'one',
-                        label: 'Micro frontend',
-                        viewUrl: 'http://localhost:5000/'
+                        label: 'Micro frontend Angular',
+                        viewUrl: 'http://api.iauro.com/neel/micro-frontend/angular1/'
                     },
                     {
                         pathSegment: 'two',
-                        label: 'Micro frontend two',
-                        viewUrl: 'http://localhost:5100/'
+                        label: 'Micro frontend Angular',
+                        viewUrl: 'http://api.iauro.com/neel/micro-frontend/angular2/'
                     },
                     {
                         pathSegment: 'three',
                         label: 'Micro frontend React',
-                        viewUrl: 'http://localhost:5200/',
+                        viewUrl: 'http://api.iauro.com/neel/micro-frontend/react/',
                         loadingIndicator: {
                             enabled: false
                         },
