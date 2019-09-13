@@ -7,24 +7,27 @@ Luigi.setConfig({
                 label: 'Home',
                 children: [
                     {
-                        pathSegment: 'hw',
-                        label: 'Hello World!',
-                        viewUrl: '/assets/basicexternal.html'
-                    },
-                    {
                         pathSegment: 'one',
                         label: 'Micro frontend',
-                        viewUrl: 'http://localhost:4000/'
+                        viewUrl: 'http://localhost:5000/'
                     },
                     {
                         pathSegment: 'two',
                         label: 'Micro frontend two',
-                        viewUrl: 'http://localhost:4100/'
+                        viewUrl: 'http://localhost:5100/'
                     },
                     {
                         pathSegment: 'three',
                         label: 'Micro frontend React',
-                        viewUrl: 'http://localhost:3000/',
+                        viewUrl: 'http://localhost:5200/',
+                        loadingIndicator: {
+                            enabled: false
+                        },
+                    },
+                    {
+                        pathSegment: 'app',
+                        label: 'Application',
+                        viewUrl: 'https://nad.techmahindra.com/webapp/#/login',
                         loadingIndicator: {
                             enabled: false
                         },
