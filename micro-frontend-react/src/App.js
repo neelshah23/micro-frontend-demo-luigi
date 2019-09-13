@@ -10,8 +10,11 @@ function App() {
         setCount(count+1);
         alert(message);
     };
+    const title = 'Micro-frontend React';
+
     return (
         <div className="App">
+            <h1>{title}</h1>
             <HashRouter>
                 <div>
                     <app-button title="My React Button" isDisabled="false" onClick={() => buttonClick('Hi React')}></app-button>
