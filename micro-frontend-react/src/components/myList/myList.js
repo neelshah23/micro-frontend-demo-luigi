@@ -9,48 +9,43 @@ export default class MyList extends React.Component {
 
     constructor(props){
         super(props);
+
         this.state = {
-            challenge_data: []
+            challenge_data: [{
+                id: '1',
+                name: 'Sheron Risser',
+                companyName: 'xerox',
+                totalProjectCompleted: '15',
+                joiningDate: '21 Jan 2016'
+            },{
+                id: '2',
+                name: 'Terrie Oleson',
+                companyName: 'IBM',
+                totalProjectCompleted: '19',
+                joiningDate: '14 Mar 2013'
+            },{
+                id: '3',
+                name: 'Jackson Rothschild',
+                companyName: 'Apple',
+                totalProjectCompleted: '5',
+                joiningDate: '21 Jan 2018'
+            },{
+                id: '4',
+                name: 'Tabetha Basye',
+                companyName: 'Google',
+                totalProjectCompleted: '4',
+                joiningDate: '01 Dec 2016'
+            },{
+                id: '5',
+                name: 'Orval Laviolette',
+                companyName: 'Google',
+                totalProjectCompleted: '16',
+                joiningDate: '21 Jan 2014'
+            }]
         };
-
-        this.getAllData();
     }
-
-
-
-    getAllData(){
-
-        axios({
-            url: 'https://01sdp6wt1l.execute-api.us-east-1.amazonaws.com/qa/',
-            method: 'post',
-            data: {
-                query: gql`
-query getChallengeListByStatus($status_id: String!) {
-  challengeListByStatus(
-    filter: {
-        status: $status_id
-    }
-  ) {
-    key
-    list {
-     
-      title
-      location
-     c_status
-     createdAt
-     createdByName
-   }
- }}
-`,
-                variables: {
-                    status_id: 'in_draft'
-                }
-            }
-        }).then((result) => {
-            if(result.data.data && result.data.data.challengeListByStatus.list) {
-                this.updateData(result.data.data.challengeListByStatus.list);
-            }
-        });
+    componentDidMount() {
+        this.updateData();
     }
 
     storeDetails(data){
@@ -59,19 +54,18 @@ query getChallengeListByStatus($status_id: String!) {
     goToDetails(data){
         this.props.history.push('/details')
     }
-    updateData(data) {
+    updateData() {
         const new_data = {
-            columns: [],
-            data: data
+            columns: [
+                {title:'ID', field: 'id'},
+                {title:'Name', field: 'name'},
+                {title:'Company name', field: 'companyName'},
+                {title:'Total project undertaken', field: 'totalProjectCompleted'},
+                {title:'Joining Date', field: 'joiningDate'},
+                ],
+            data: this.state.challenge_data
         };
 
-        if(data.length) {
-            const columns = Object.keys(data[0]);
-
-            for (let column of columns) {
-                new_data.columns.push({title: column.replace(/_/g,' ').toUpperCase(), field: column});
-            }
-        }
         this.setState({challenge_data: new_data});
     };
     render() {

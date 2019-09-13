@@ -7,7 +7,7 @@ import {addContextUpdateListener} from '@kyma-project/luigi-client/luigi-client'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'micro-frontend-demo2';
+  title = 'Micro-Frontend Angular';
   cudListener: any;
   clickCount = 0;
 

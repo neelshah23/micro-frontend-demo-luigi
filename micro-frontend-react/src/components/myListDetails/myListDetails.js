@@ -19,17 +19,15 @@ export default class MyListDetails extends React.Component {
         this.props.history.push('/home');
     }
 
-
-
     render() {
         return (
             <div className="myContainer">
                 <p style={{textAlign: "left", cursor: "pointer"}} onClick={() => {this.backTodashboard()}}><Icon style={{verticalAlign: "middle"}}>arrow_back</Icon> <span>Back to dashboard</span></p>
                 <div>
-                    <h1>{this.data.title}</h1>
-                    <p>Location: {this.data.location}</p>
-                    <p>Created By: {this.data.createdByName}</p>
-                    <p>Created At: {this.data.createdAt}</p>
+                    <h1>{this.data.name}</h1>
+                    <p>Company Name: {this.data.companyName}</p>
+                    <p>Total Project Completed: {this.data.totalProjectCompleted}</p>
+                    <p>Joining Date: {this.data.joiningDate}</p>
                 </div>
             </div>
         );

@@ -6,7 +6,7 @@ export default function EnhancedTable(props) {
 
     return (
         <MaterialTable
-            title="My Reports"
+            title="Employee list"
             columns={props.data.columns}
             data={props.data.data}
             actions={[
