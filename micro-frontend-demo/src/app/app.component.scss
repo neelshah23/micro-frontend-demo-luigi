@@ -1,0 +1,23 @@
+
+.card{
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  align-items: center;
+  place-content: center;
+  display: flex;
+  box-shadow: 1px 1px 1px 1px #efefef;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  background-color: #354a5e;
+  transition: all ease 0.4s;
+}
+.card p{
+  margin: 0;
+
+}
+.center{
+  text-align: center;
+}

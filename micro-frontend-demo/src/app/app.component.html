@@ -1,0 +1,12 @@
+<div class="center">
+  <h1>{{title}}</h1>
+  <div style="
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    flex-wrap: wrap;
+">
+
+  <div class="card" *ngFor="let i of data;let j = index" id="{{'element' + j}}" (click)="redirectToNextMS(i)" (mouseenter)="showHoverColor(j)" (mouseleave)="resetHoverColor(j)"><p>{{i.displayName}}</p></div>
+  </div>
+</div>
