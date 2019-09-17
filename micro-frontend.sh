@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/usr/bin/env bash
+
+source ~/.nvm/nvm.sh
 
 nvm use default
 
@@ -13,3 +15,6 @@ ng serve &
 
 cd ../micro-frontend-react/
 npm start
+
+cd ../micro-frontend-vue/
+npm run serve
