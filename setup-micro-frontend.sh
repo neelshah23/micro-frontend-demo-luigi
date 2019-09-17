@@ -5,16 +5,16 @@ source ~/.nvm/nvm.sh
 nvm use default
 
 cd luigi-micro-frontend
-npm run start &
+npm install
 
 cd ../micro-frontend-demo/
-ng serve &
+ng install
 
 cd ../micro-frontend-demo2/
-ng serve &
+npm install
 
 cd ../micro-frontend-react/
-npm start
+npm install
 
 cd ../micro-frontend-vue/
-npm run serve
+npm install
