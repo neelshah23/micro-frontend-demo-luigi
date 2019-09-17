@@ -25,10 +25,10 @@ export class AppComponent {
     luigiClient.linkManager().withParams({id: i.link}).navigate(`/home/${i.link}`, null, true);
   }
   showHoverColor(i) {
-    document.querySelector(`#element${i}`).style.backgroundColor = this.myColor[Math.round(Math.random() * (this.myColor.length - 1))];
+    document.getElementById(`element${i}`).style.backgroundColor = this.myColor[Math.round(Math.random() * (this.myColor.length - 1))];
   }
 
   resetHoverColor(i) {
-    document.querySelector(`#element${i}`).style.backgroundColor = '#354a5e';
+    document.getElementById(`element${i}`).style.backgroundColor = '#354a5e';
   }
 }

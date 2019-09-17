@@ -9,18 +9,18 @@ Luigi.setConfig({
                 children: [
                     {
                         pathSegment: 'one',
-                        label: 'Micro-frontend Angular ',
-                        viewUrl: 'http://localhost:5000'
+                        label: 'Micro-Frontend Angular ',
+                        viewUrl: 'http://13.233.255.84/micro-frontend/angular/'
                     },
                     {
                         pathSegment: 'two',
-                        label: 'Micro-frontend Angular',
-                        viewUrl: 'http://localhost:5100'
+                        label: 'Micro-Frontend Angular component',
+                        viewUrl: 'http://13.233.255.84/micro-frontend/angularComponent/'
                     },
                     {
                         pathSegment: 'three',
-                        label: 'Micro-frontend React',
-                        viewUrl: 'http://localhost:5200',
+                        label: 'Micro-Frontend React hybrid',
+                        viewUrl: 'http://13.233.255.84/micro-frontend/react/#/',
                         loadingIndicator: {
                             enabled: false
                         },
