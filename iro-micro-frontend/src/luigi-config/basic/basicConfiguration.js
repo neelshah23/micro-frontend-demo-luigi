@@ -10,28 +10,28 @@ Luigi.setConfig({
                     {
                         pathSegment: 'one',
                         label: 'Micro-Frontend Angular ',
-                        viewUrl: 'http://13.233.255.84/micro-frontend/angular/'
+                        viewUrl: '[HOST]/micro-frontend/angular/'
                     },
                     {
                         pathSegment: 'two',
                         label: 'Micro-Frontend Angular component',
-                        viewUrl: 'http://13.233.255.84/micro-frontend/angularComponent/'
+                        viewUrl: '[HOST]/micro-frontend/angularComponent/'
                     },
                     {
                         pathSegment: 'three',
                         label: 'Micro-Frontend React hybrid',
-                        viewUrl: 'http://13.233.255.84/micro-frontend/react/#/',
+                        viewUrl: '[HOST]/micro-frontend/react/',
                         loadingIndicator: {
                             enabled: false
-                        },
+                        }
                     },
                     {
-                        pathSegment: 'app',
-                        label: 'Application',
-                        viewUrl: 'https://nad.techmahindra.com/webapp/#/login',
+                        pathSegment: 'vue',
+                        label: 'Micro-Frontend Vue.js',
+                        viewUrl: '[HOST]/micro-frontend/vue/',
                         loadingIndicator: {
                             enabled: false
-                        },
+                        }
                     }
                 ]
             }
